@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Benjamin Lo's puzzle</h1>
+    <span id="time"></span>
+
+    <!-- <div id="menu">
+    <svg viewBox="0 0 1 1">
+      <defs>
+        <clipPath id="puzzle" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0 0.7763157894736841H0.23684210526315788C0.3289473684210526 0.7763157894736841 0.35526315789473684 0.7236842105263157 0.2894736842105263 0.6578947368421053 0.22368421052631576 0.5921052631578947 0.3157894736842105 0.5526315789473684 0.39473684210526316 0.5526315789473684 0.47368421052631576 0.5526315789473684 0.5657894736842105 0.5921052631578947 0.5 0.6578947368421053 0.43421052631578944 0.7236842105263157 0.4605263157894737 0.7763157894736841 0.5526315789473684 0.7763157894736841H0.7763157894736842V0.5526315789473684C0.7763157894736842 0.4605263157894737 0.8289473684210525 0.4342105263157894 0.894736842105263 0.5 0.9605263157894737 0.5657894736842106 1 0.4736842105263157 1 0.39473684210526305 1 0.3157894736842106 0.9605263157894737 0.2236842105263157 0.894736842105263 0.2894736842105263 0.8289473684210525 0.3552631578947367 0.7763157894736842 0.32894736842105265 0.7763157894736842 0.23684210526315796V0H0V0.7763157894736841Z">
+          </path>
+        </clipPath>
+      </defs>
+    </svg>
+    <div class="grid">
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item-box">
+        <div class="item-container">
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+          <div class="piece">
+            <div class="puzzle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    <div id="sliding-puzzle">
+      <button id="btn">Start</button>
+      <small>Play with your arrow keys</small>
+    </div>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  </body>
+</html>
