@@ -39,7 +39,7 @@ btn.addEventListener("click", (e) => {
 
 function preload() {
   img = loadImage(
-    "https://cdn.discordapp.com/attachments/1082028813967433791/1082030252294951012/IMG_0378.jpg"
+    "https://images.unsplash.com/photo-1677741447337-48aba59a8f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
   );
 }
 
