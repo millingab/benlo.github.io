@@ -32,7 +32,7 @@ confetti("tsparticles", {
   decay: 0.9,
   gravity: 1,
   drift: 0,
-  ticks: 1000,
+  ticks: 200,
   colors: [
     "#ff0000",
     "#ffa500",
