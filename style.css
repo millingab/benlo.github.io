@@ -63,30 +63,6 @@ canvas.woop {
   padding: 5px 10px;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-footer p {
-  margin: 10px 0;
-}
-
-footer i {
-  color: red;
-}
-
-footer a {
-  color: #3c97bf;
-  text-decoration: none;
-}
-
 /* CSS */
 .button-74 {
   background-color: #fbeee0;

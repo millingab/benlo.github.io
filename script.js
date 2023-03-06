@@ -79,7 +79,7 @@ function draw() {
     );
 
     // update the DOM
-    time.innerHTML = diff ? `${diff}s` : "";
+    time.innerHTML = diff ? `${diff} sec` : "";
     time.style.display = diff ? "block" : "none";
   } else {
     background(200);
@@ -239,9 +239,9 @@ class Piece {
 
     if (!this.isEmpty) {
       fill(0);
-      textAlign(CENTER, CENTER);
-      textSize(24);
-      text(this.id, this.pos.x + this.size / 2, this.pos.y + this.size / 2);
+      // textAlign(CENTER, CENTER);
+      // textSize(24);
+      // text(this.id, this.pos.x + this.size / 2, this.pos.y + this.size / 2);
     }
   }
 }
