@@ -1,30 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 
 body {
   align-items: center;
-  color: #222;
+  color: #422800;
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Permanent Marker", "Arial", sans-serif;
   min-height: 100vh;
   justify-content: flex-start;
   margin: 0;
-  background: #d3cce3; /* fallback for old browsers */
+  background: #ffe4c8; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #e9e4f0,
-    #d3cce3
+    #fbefe1,
+    #ffe4c8
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #e9e4f0,
-    #d3cce3
+    #fbefe1,
+    #ffe4c8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 small {
@@ -32,6 +34,7 @@ small {
 }
 
 button {
+  font-family: "Permanent Marker", "Arial", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -84,153 +87,80 @@ footer a {
   text-decoration: none;
 }
 
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow: hidden;
-  background: #fff3e0;
-}
-
-svg {
-  width: 0;
-  height: 0;
-  display: block;
-}
-
-.grid {
-  width: 80vmin;
-  margin: 10vmin auto;
-  display: flex;
-  flex-wrap: wrap;
-  transform-style: preserve-3d;
-  box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, 0.1),
-    inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, 0.1);
-  perspective: 2000;
-}
-
-.item-box {
-  position: relative;
-  width: 26.66667vmin;
-  height: 26.66667vmin;
-  transform-style: preserve-3d;
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
   cursor: pointer;
-  transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
-}
-.item-box:nth-child(1) .puzzle:before {
-  background-image: url("https://media.discordapp.net/attachments/1072530546493767692/1073987964624973975/Luv_funny_chef_cartoon_character_2D_solid_background_color_29d4196e-dc12-42c4-b833-40debf067049.png?width=976&height=976");
-}
-.item-box:nth-child(2) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=1006");
-}
-.item-box:nth-child(3) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=883");
-}
-.item-box:nth-child(4) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=1074");
-}
-.item-box:nth-child(5) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=823");
-}
-.item-box:nth-child(6) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=64");
-}
-.item-box:nth-child(7) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=65");
-}
-.item-box:nth-child(8) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=839");
-}
-.item-box:nth-child(9) .puzzle:before {
-  background-image: url("https://unsplash.it/600/600?image=832");
-}
-.item-box:hover {
-  transform: scale(1.25, 1.25);
-  box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
-}
-.item-box:hover .puzzle {
-  transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
-  opacity: 1;
-}
-.item-box .item-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-style: preserve-3d;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  margin: 20px 0 40px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.piece {
-  position: absolute;
-  width: 13.33333vmin;
-  height: 13.33333vmin;
-  transform-style: preserve-3d;
-}
-.piece:nth-child(1) {
-  transform: translateX(-100%) translateY(-100%) rotate(0deg);
-}
-.piece:nth-child(1) .puzzle:before {
-  background-position: 0% 0%;
-  transform: rotate(0deg);
-}
-.piece:nth-child(2) {
-  transform: translateX(0%) translateY(-100%) rotate(90deg);
-}
-.piece:nth-child(2) .puzzle:before {
-  background-position: 100% 0%;
-  transform: rotate(-90deg);
-}
-.piece:nth-child(3) {
-  transform: translateX(0%) translateY(0%) rotate(180deg);
-}
-.piece:nth-child(3) .puzzle:before {
-  background-position: 100% 100%;
-  transform: rotate(-180deg);
-}
-.piece:nth-child(4) {
-  transform: translateX(-100%) translateY(0%) rotate(270deg);
-}
-.piece:nth-child(4) .puzzle:before {
-  background-position: 0% 100%;
-  transform: rotate(-270deg);
+.button-74:hover {
+  background-color: #fff;
 }
 
-.puzzle {
-  position: absolute;
-  width: 17.17505vmin;
-  height: 17.17505vmin;
-  background-color: #000;
-  -webkit-clip-path: url(#puzzle);
-  clip-path: url(#puzzle);
-  opacity: 0.8;
-  transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px)
-    rotateX(0.5turn) rotateY(0.5turn);
-  transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-.puzzle:before {
-  content: "";
-  position: absolute;
-  width: 17.17505vmin;
-  height: 17.17505vmin;
-  background-size: 155.264%;
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
 }
 
-@-webkit-keyframes init {
-  from {
-    transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
   }
 }
 
-@keyframes init {
-  from {
-    transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
-  }
-}
-
-#sliding-puzzle {
+#instructions {
   display: none;
+}
+
+/* ---- tsparticles container ---- */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.github {
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 12px 6px 12px;
+  border: 1px solid #000;
+}
+
+.github a:hover,
+.github a:link,
+.github a:visited,
+.github a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.github img {
+  height: 30px;
+}
+
+.github #gh-project {
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: bold;
+  vertical-align: bottom;
 }

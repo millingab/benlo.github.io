@@ -14,10 +14,14 @@ let currentTime;
 // DOM
 const btn = document.getElementById("btn");
 const time = document.getElementById("time");
+const instructions = document.getElementById("instructions");
+const heading = document.getElementById("heading");
 let canvas;
 
 btn.addEventListener("click", (e) => {
   e.target.disabled = true;
+  btn.style.display = "none";
+  instructions.style.display = "block";
 
   // Randomize the pieces
   for (let i = 0; i < DIFFICUTY; i++) {
@@ -196,6 +200,7 @@ function checkGame() {
 
   gameFroze = true;
   gameEnded = true;
+  heading.innerHTML = "Congrats! BEN is GAY!";
   canvas.canvas.classList.add("woop");
 }
 class Piece {
