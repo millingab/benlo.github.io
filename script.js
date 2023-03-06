@@ -18,14 +18,41 @@ const leftBtn = document.getElementById("left-btn");
 const downBtn = document.getElementById("down-btn");
 const rightBtn = document.getElementById("right-btn");
 const time = document.getElementById("time");
+const arrowKeys = document.getElementById("arrow-keys");
 const instructions = document.getElementById("instructions");
 const heading = document.getElementById("heading");
 let canvas;
+
+confetti("tsparticles", {
+  angle: 90,
+  count: 25,
+  position: { x: 50, y: 50 },
+  spread: 90,
+  startVelocity: 60,
+  decay: 0.9,
+  gravity: 1,
+  drift: 0,
+  ticks: 1000,
+  colors: [
+    "#ff0000",
+    "#ffa500",
+    "#ffff00",
+    "#008000",
+    "#0000ff",
+    "#4b0082",
+    "#ee82ee",
+  ],
+  shapes: ["square"],
+  scalar: 1,
+  zIndex: 2000,
+  disableForReducedMotion: true,
+});
 
 btn.addEventListener("click", (e) => {
   e.target.disabled = true;
   btn.style.display = "none";
   instructions.style.display = "block";
+  arrowKeys.style.display = "block";
 
   // Randomize the pieces
   for (let i = 0; i < DIFFICUTY; i++) {
@@ -46,7 +73,7 @@ btn.addEventListener("click", (e) => {
 });
 
 function preload() {
-  imgNum = Math.floor(Math.random() * 25);
+  imgNum = Math.floor(Math.random() * 21);
   img = loadImage(
     "https://raw.githubusercontent.com/millingab/benlo.github.io/main/" +
       String(imgNum) +
@@ -117,23 +144,31 @@ function keyPressed() {
 }
 
 upBtn.addEventListener("click", () => {
-  moveLastPiece("up");
-  checkGame();
+  if (!gameFroze) {
+    moveLastPiece("up");
+    checkGame();
+  }
 });
 
 downBtn.addEventListener("click", () => {
-  moveLastPiece("down");
-  checkGame();
+  if (!gameFroze) {
+    moveLastPiece("down");
+    checkGame();
+  }
 });
 
 leftBtn.addEventListener("click", () => {
-  moveLastPiece("left");
-  checkGame();
+  if (!gameFroze) {
+    moveLastPiece("left");
+    checkGame();
+  }
 });
 
 rightBtn.addEventListener("click", () => {
-  moveLastPiece("right");
-  checkGame();
+  if (!gameFroze) {
+    moveLastPiece("right");
+    checkGame();
+  }
 });
 
 function moveLastPiece(direction) {
@@ -225,6 +260,30 @@ function checkGame() {
   gameFroze = true;
   gameEnded = true;
   heading.innerHTML = "Congrats! BEN is GAY!";
+  confetti("tsparticles", {
+    angle: 90,
+    count: 25,
+    position: { x: 50, y: 50 },
+    spread: 90,
+    startVelocity: 60,
+    decay: 0.9,
+    gravity: 1,
+    drift: 0,
+    ticks: 1000,
+    colors: [
+      "#ff0000",
+      "#ffa500",
+      "#ffff00",
+      "#008000",
+      "#0000ff",
+      "#4b0082",
+      "#ee82ee",
+    ],
+    shapes: ["square"],
+    scalar: 1,
+    zIndex: 2000,
+    disableForReducedMotion: true,
+  });
   canvas.canvas.classList.add("woop");
 }
 class Piece {
