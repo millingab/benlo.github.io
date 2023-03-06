@@ -140,3 +140,24 @@ canvas.woop {
   font-weight: bold;
   vertical-align: bottom;
 }
+
+.arrow-keys {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.arrow-key {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  background: #fff;
+  border: 1px solid #000;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}

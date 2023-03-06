@@ -13,6 +13,10 @@ let currentTime;
 
 // DOM
 const btn = document.getElementById("btn");
+const upBtn = document.getElementById("up-btn");
+const leftBtn = document.getElementById("left-btn");
+const downBtn = document.getElementById("down-btn");
+const rightBtn = document.getElementById("right-btn");
 const time = document.getElementById("time");
 const instructions = document.getElementById("instructions");
 const heading = document.getElementById("heading");
@@ -111,6 +115,26 @@ function keyPressed() {
     checkGame();
   }
 }
+
+upBtn.addEventListener("click", () => {
+  moveLastPiece("up");
+  checkGame();
+});
+
+downBtn.addEventListener("click", () => {
+  moveLastPiece("down");
+  checkGame();
+});
+
+leftBtn.addEventListener("click", () => {
+  moveLastPiece("left");
+  checkGame();
+});
+
+rightBtn.addEventListener("click", () => {
+  moveLastPiece("right");
+  checkGame();
+});
 
 function moveLastPiece(direction) {
   const { x, y } = lastPiece;
