@@ -73,7 +73,7 @@ btn.addEventListener("click", (e) => {
 });
 
 function preload() {
-  imgNum = Math.floor(Math.random() * 100) % 16;
+  imgNum = Math.floor(Math.random() * 100) % 11;
   img = loadImage(
     "https://raw.githubusercontent.com/millingab/benlo.github.io/main/" +
       String(imgNum) +
